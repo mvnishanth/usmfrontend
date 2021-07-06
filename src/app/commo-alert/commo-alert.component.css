@@ -1,0 +1,107 @@
+
+  .popup-dialog{
+    width: 100%;
+    margin: auto
+    }
+    
+    
+    .popup-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    }
+    
+    
+    
+    .popup-content{
+    
+    
+    border: 1px black;
+    margin: auto;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Gotham Book Regular';
+    }
+    
+    
+    svg {
+    overflow: hidden;
+    vertical-align: middle;
+    margin: auto;
+    margin-left: 36%;
+    }
+    
+    
+    .popup-body {
+    position: relative;
+    
+    flex: 1 1 auto;
+    padding: 0.7rem;
+    text-align: center; 
+    
+    }
+    
+    
+    .popup-footer {
+    
+    display: flex;
+    border-top: none;
+    
+    }
+    
+    .btn-cancel{
+      color: #fff;
+      background-color: #23272b;
+      width: 95%;
+      margin: 0 2.5%;
+      /* height: 1.8rem; */
+      padding: .3rem;
+      border: none !important;
+      outline: none !important;
+      font-size: 0.9rem;
+  
+    }
+    
+    
+    .btn-delete{
+    color: #fff;
+    background-color: #23272b;
+    padding: .3rem;
+    width: 95%;
+    margin: 0 2.5%;
+    border:none !important;
+    outline: none !important;
+    /* //font-family: 'Gotham\ Black' !important; */
+    font-size: 0.9rem;
+    }
+
+    .btn-achiev{
+    color: #fff;
+    background-color: #13da4e;
+    width: 95%;
+    line-height: 1rem;
+    
+    margin-right: 1.5rem;
+    border:none !important;
+    outline: none !important;
+
+
+}
+
+.btn-edit {
+  color: #fff;
+  background-color: #6ea04b;
+  width: 95%;
+  margin: 0 2.5%;
+  padding: 0.3rem;
+  border: none !important;
+  outline: none !important;
+  font-size: 0.9rem;
+}
+
+.cross_icon{
+      float: right;
+    margin-top: -1rem;
+    width: 3% !important;
+}

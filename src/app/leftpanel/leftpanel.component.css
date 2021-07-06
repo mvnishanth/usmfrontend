@@ -1,0 +1,203 @@
+.accordion {
+    display: none;
+}
+
+.accordion {
+    position: absolute;
+    left: -220px;
+    padding-top: 0;
+    z-index: 1030;
+    margin: 20px auto;
+}
+
+
+
+.accordion li:hover {
+    /* //background-color: rgba(243, 241, 241, 0.972); */
+    background: #47bae4eb;
+}
+
+.doc_img1 {
+    width: 45px;
+    height: 45px;
+    float: left;
+    border-radius: 50px;
+    margin-right: 10px;
+    background-size: cover;
+    background: #dad7d7eb;
+    background-position: center center;
+}
+
+.accordion,
+.accordion-bg {
+    /* //background: #343a40; */
+    left: 0;
+    width: 244px;
+    /* // top: 55px; */
+    top: 30px;
+    bottom: 0;
+    /* // background: #47bae4eb; */
+
+    background: #2d353c;
+}
+
+.sidemenuprofile {
+    cursor: pointer;
+    font-size: 13px;
+    color: white;
+}
+
+.sidemenuprofilename {
+    width: 200px;
+    cursor: pointer;
+    font-size: 14px;
+    color: orange;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding-top: 7px;
+}
+
+
+.accordion h1 {
+    padding: 8px 15px;
+
+    font-size: 1.1rem;
+    font-weight: normal;
+    /* //color: #868e96; */
+    color: #fff;
+    /* // border-bottom: 1.05px solid #47bae4eb; */
+
+}
+
+.accordion h2 {
+    padding: 5px 25px;
+    background-color: #1abc9c;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.accordion h2:hover {
+    background-color: black;
+}
+
+.accordion h3 {
+    padding: 5px 30px;
+    background-color: #b94152;
+    font-size: .9rem;
+    color: #ddd;
+}
+
+.accordion h3:hover {
+    background-color: white;
+}
+
+.accordion h4 {
+    padding: 5px 50px;
+    background-color: whi;
+    font-size: .9rem;
+    color: white;
+}
+
+.accordion h4:hover {
+    background-color: black;
+}
+
+
+.accordion .opened-for-codepen {
+    display: block;
+}
+
+.menuimages {
+    margin-right: 5px;
+}
+
+element.style {
+    display: none;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+[hidden]:not([broken]) {
+    display: none !important;
+}
+
+
+ul li {
+    cursor: pointer;
+}
+
+.active {
+    color: white;
+}
+
+.active ul {
+    display: block !important;
+}
+
+
+
+.modal {
+   position: fixed;
+    background-color: #969292;
+    margin-left: 40%;
+ 
+   z-index: 1000;
+
+   overflow: auto;
+
+
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #3f3b3b;
+    opacity: 0.75;
+
+   z-index: 900;
+}
+
+
+body.modal-open {
+   
+    overflow: hidden;
+}
+
+.tasqprofile_img {
+    width: 45px;
+    height: 45px;
+    float: left;
+    border-radius: 50px;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+   .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    /* margin-left: .255em; */
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    float: right;
+  }
+

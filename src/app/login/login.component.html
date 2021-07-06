@@ -1,0 +1,170 @@
+
+
+<div class="jumbotron" style="background-color:transparent">
+  <div class="container" *ngIf="logingview" >
+    <div class="row">
+      <div class="col-sm-6 offset-sm-3" >
+       
+        <h2 style="color:black;text-align: center;text-decoration: underline;">Login</h2>
+        <div class="toastmsg" *ngIf="toastmsg != ''">
+          <p style="margin: 0%;">
+            {{ toastmsg }}
+          </p>
+        </div>
+        <div class="toastmsgsuccess" *ngIf="sucessmsg != ''">
+          <p style="margin: 0%;">
+            {{ sucessmsg }}
+          </p>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+          <div class="form-group" style="color: #fff">
+            <label for="username" style="color: black;">Email</label>
+            <input type="text" formControlName="username" class="form-control"
+              />
+              <div  class="errormessage">
+                <div *ngIf="
+                submitted && 
+                loginForm.controls.username.hasError('required')">Email</div>
+            </div>
+          </div>
+          <div class="form-group" style="color: #fff">
+            <label for="password" style="color: black;">Password</label>
+            <input type="password" formControlName="password" class="form-control"
+              />
+              <div  class="errormessage">
+                <div *ngIf="
+                submitted && 
+                loginForm.controls.password.hasError('required')">Password is required</div>
+            </div>
+          </div>
+         
+          <div class="form-group">
+            <button [disabled]="loading" class="btn btn-primary">
+              <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+              Login
+            </button>
+            <a class="btn btn-link" (click)="regsitershow()">Register</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container"  *ngIf="registerview">
+    <div class="row" >
+      <div class="col-sm-5 offset-sm-3">
+       
+        <h2 style="color:black;text-align: center;text-decoration: underline;">Register</h2>
+        <div class="toastmsg" *ngIf="toastmsg != ''">
+          <p style="margin: 0%;">
+            {{ toastmsg }}
+          </p>
+        </div>
+        <form [formGroup]="registerform" (ngSubmit)="onregSubmit()">
+          <div class="form-group" style="color: #fff">
+            <label for="username" style="color: black;">Email</label>
+            <input type="text" formControlName="username" class="form-control"
+             />
+              <div class="errormessage" *ngIf=" 
+              submitted && 
+              registerform.controls.username.hasError('required')
+                ">Email is required</div>
+              <div  class="errormessage" *ngIf="
+              submitted && registerform.controls.username.touched &&
+              registerform.controls.username.hasError('pattern') &&
+              registerform.controls.username.invalid &&
+              registerform.controls.username.dirty
+                ">Invalid email
+                <br />(example@gmail.com)</div>
+
+            </div>
+          <div class="form-group" style="color: #fff">
+            <label for="password" style="color: black;">Password</label>
+            <input type="password" formControlName="password" class="form-control"
+               />
+            <div  class="errormessage">
+              <div *ngIf="
+              submitted && 
+              registerform.controls.password.hasError('required')">Password is required</div>
+          </div>
+          </div>
+          <div class="form-group" style="color: #fff">
+            <label for="password" style="color: black;">Name</label>
+            <input type="text" formControlName="name" class="form-control"
+              />
+            
+              <div  class="errormessage">
+                <div *ngIf="
+                submitted && 
+                registerform.controls.name.hasError('required')">Name is required</div>
+            </div>
+            <div class="errormessage" *ngIf="
+            submitted &&   registerform.controls.name.touched &&
+            registerform.controls.name.hasError('pattern') &&
+            registerform.controls.name.invalid
+              ">
+              Name is only characters
+          </div>
+          <div class="errormessage" *ngIf="
+          registerform.controls.name.touched &&
+          registerform.controls.name.hasError('maxlength')
+            ">
+            Name is max 30 characters
+        </div>
+          </div>
+          <div class="form-group" style="color: #fff">
+            <label for="password" style="color: black;">Phone</label>
+            <input type="number" formControlName="phone" class="form-control" maxlength="10"
+               />
+               <div  class="errormessage">
+                <div *ngIf="
+                submitted && 
+                registerform.controls.phone.hasError('required')">Phone is required</div>
+            </div>
+           
+          </div>
+          <div class="form-group" style="color: #fff">
+            <label for="password" style="color: black;">Gender</label>
+            <select type="password" formControlName="gender" class="form-control"
+             >
+            <option value="" disabled>Select</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+      
+          </select>
+          <div  class="errormessage">
+            <div *ngIf="
+            submitted && 
+            registerform.controls.gender.hasError('required')"> Select gender</div>
+        </div>
+          </div>
+            
+ 
+         
+          <div class="form-group" style="color: #fff">
+            <label for="password" style="color: black;">Designation</label>
+            <select type="password" formControlName="designation" class="form-control"
+              >
+              <option value="" disabled>Select</option>
+            <option value="admin">Admin</option>
+            <option value="Manager">Manager</option>
+            <option value="staff">staff</option>
+            </select>
+            <div  class="errormessage">
+              <div *ngIf="
+              submitted && 
+              registerform.controls.designation.hasError('required')"> Select Designation</div>
+          </div>
+          </div>
+          <div class="form-group">
+            <button [disabled]="loading" class="btn btn-primary">
+              <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+              Register
+            </button>
+            <a routerLink="/register" class="btn btn-link" (click)="loginshow()">Login</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

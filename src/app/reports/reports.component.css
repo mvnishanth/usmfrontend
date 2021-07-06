@@ -1,0 +1,16 @@
+.toastmsgsuccess {
+    text-align: center;
+    padding: 1% 2.5%;
+    position: absolute;
+    color: white;
+    z-index: 10000;
+    right: 40%;
+    top: 12%;
+    background:green;
+    border-radius: 8px;
+    text-transform: capitalize;
+  }
+  .table {
+   margin: auto;
+   width: 70% !important; 
+}

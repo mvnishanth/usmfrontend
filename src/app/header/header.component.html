@@ -1,0 +1,33 @@
+
+
+
+<header class="intro-header">
+  <header class="mainheader">
+    <nav class="navbar fixed-top navbar-dark bg-dark top-nav justify-content-between">
+      <div class="row" >
+        <button  *ngIf="logtype !='staff'" class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation" (click)="showmenu()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      </div>
+
+    
+
+      <div>
+          <a class="nav-item nav-link" style="color: white" routerLink="/login">Logout</a>          
+      </div>
+
+
+
+
+    </nav>
+  </header>
+
+  <div *ngIf="logtype !='staff'">
+    <div id="sidebar" class="sidebar " style="height: 100%;">
+      <app-leftpanel></app-leftpanel>
+    </div>
+  </div>
+</header>
+

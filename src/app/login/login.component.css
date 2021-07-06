@@ -1,0 +1,54 @@
+.header {
+    background: linear-gradient(to right, #a64eee 0%, #3c35ce 100%);
+}
+.logindiv {
+    position: absolute;
+    right: 4%;
+    width: 15%;
+}
+.login {
+    margin: 1.5% 0%;
+    width: auto;
+    margin-left: 77%;
+}
+.toastmsg {
+    text-align: center;
+    padding: 1% 2.5%;
+    position: absolute;
+    color: white;
+    z-index: 10000;
+    right: 40%;
+    top: 12%;
+    background: red;
+    border-radius: 8px;
+    text-transform: capitalize;
+}
+
+.toastmsgsuccess {
+  text-align: center;
+  padding: 1% 2.5%;
+  position: absolute;
+  color: white;
+  z-index: 10000;
+  right: 40%;
+  top: 12%;
+  background:green;
+  border-radius: 8px;
+  text-transform: capitalize;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.errormessage {
+  color: red;
+  text-align: left;
+
+}

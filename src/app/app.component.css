@@ -1,0 +1,10 @@
+#swapp {
+     /* background: url('../assets/imgs/car-editing-background---picsart-(8)yyigksansk.jpg') no-repeat center center fixed !important;  */
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    overflow-x: hidden !important;
+    /* height: -webkit-fill-available !important; */
+    height: 100vh;
+}

@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+body {
+    
+    background-image: ('../imgs/car-editing-background---picsart-(8)yyigksansk.jpg');
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-size: cover;
+}
+
+
