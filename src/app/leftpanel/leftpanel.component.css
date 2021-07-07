@@ -13,7 +13,6 @@
 
 
 .accordion li:hover {
-    /* //background-color: rgba(243, 241, 241, 0.972); */
     background: #47bae4eb;
 }
 
@@ -30,13 +29,12 @@
 
 .accordion,
 .accordion-bg {
-    /* //background: #343a40; */
+ 
     left: 0;
     width: 244px;
-    /* // top: 55px; */
     top: 30px;
     bottom: 0;
-    /* // background: #47bae4eb; */
+
 
     background: #2d353c;
 }
@@ -63,9 +61,7 @@
 
     font-size: 1.1rem;
     font-weight: normal;
-    /* //color: #868e96; */
     color: #fff;
-    /* // border-bottom: 1.05px solid #47bae4eb; */
 
 }
 
@@ -191,7 +187,6 @@ body.modal-open {
     display: inline-block;
     width: 0;
     height: 0;
-    /* margin-left: .255em; */
     vertical-align: .255em;
     content: "";
     border-top: .3em solid;
